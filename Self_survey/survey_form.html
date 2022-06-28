@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles.css">
+        <title>Survey Form"></title>
+    </head>
+    <div class="wrap">
+    <body>
+        <h1 id="title">
+            <br>
+            freeCodeCamp Survey Form
+        </h1>
+        <p id="description">
+            for taking the time to help us improve the platform 
+        </p>
+        <form id="survey-form" >
+            <fieldset class="first">
+                <label id="name-label">Name<br><input id="name" type="text" placeholder="Enter your name" required/></label><br>
+                <label id="email-label">Email<br><input id="email" type="email" placeholder="Enter your email" required/></label><br>
+                <label id="number-label">Age(optional)<br><input  id="number" type="number" placeholder="Enter your age" min="12" max="120"/></label><br>
+                <label>
+                    Which option describes you best?<br>
+                <select id="dropdown">
+                    <option value="none">Select an option</option> 
+                    <option value="">Challenges</option>
+                    <option value="">Projects</option>
+                    <option value="">Community</option>
+                    <option value="">Open Source</option>
+                </select><br>
+                </label>
+            </fieldset>
+            <fieldset class="second">
+                <label id="temp1">Would you recommend freeCodeCamp to a friend?<br></label>
+                    <label>
+                    <input type="radio" name="refer" value="referal" />Definetly<br>
+                    <input type="radio" name="refer" value="referal" />Maybe<br>
+                    <input type="radio" name="refer" value="referal" />Not sure<br>
+                </label>
+            </fieldset>
+            <fieldset class="third">
+                <label>
+                    <label id="temp2">
+                    What would you like to see improved? (Check all that apply)<br></label>
+                    <input type="checkbox" value="ront-end Projects"/>Front-end Projects<br>
+                    <input type="checkbox" value="Back-end Projects" />Back-end Projects<br>
+                    <input type="checkbox" value="Data Visualization" />Data Visualization<br>
+                    <input type="checkbox" value="Challenges" />Challenges<br>
+                    <input type="checkbox" value="Open Source Community" />Open Source Community<br>
+                    <input type="checkbox" value="Gitter help rooms" />Gitter help rooms<br>
+                    <input type="checkbox" value="Video"/>Videos<br>
+                    <input type="checkbox" value="Wiki"/>Wiki<br>
+                    <input type="checkbox" value="Forum"/>Forum<br>
+                </label>
+            </fieldset>
+            <fieldset class="fourth">
+                <label>
+                    <label id="temp3">Any comments or suggestions?<br></label>
+                    <textarea rows="10" col="30" placeholder="Enter your comment here"></textarea>
+                </label><br>
+            </fieldset> 
+            <label><input id="submit" type="submit"></label>
+        </form> 
+    </body>
+    </div>
+</html>

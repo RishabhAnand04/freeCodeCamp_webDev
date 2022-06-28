@@ -1,0 +1,126 @@
+body{
+    background-image: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: auto;
+    text-align: center;
+    width: 100%;
+    height:100%;
+    font-family: 'Gill Sans';
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.4;
+        color: white;
+        margin: 0;
+}
+
+#description{
+    color: white;
+        font-family: 'Gill Sans';
+        font-size: 30px;
+}
+.wrap{
+    width: 2000px;
+    height: 1340px;
+    background-color: rgba(80, 80, 228, 0.7);
+    margin: -120px;
+    padding: 0;
+}
+#title{
+    margin-top: 120px;
+    font-size: 40px;
+}
+#title, #description{
+    margin-left: -220px;
+}
+
+form{
+    color: white;
+    font-family: 'Gill Sans';
+    font-size: 19.5px;
+        /* font-weight: 400;
+        line-height: 1.4; */
+        color: white;
+        margin: 0;
+    padding-top: 30px;
+    border-radius: 25px;
+    background-color: rgba(36, 36, 59, 0.9);
+    margin-top: 30px;
+    margin-bottom: 22px;
+    margin-left: 500px;
+    width: 800px;
+    height: 1100px;
+}
+.first,.second,.third{
+    text-align: left;
+    padding: 10px;
+    margin-left:20px;
+    border: 0;
+}
+.first{
+    margin-bottom: 20px;
+}
+.fourth{
+    text-align: left;
+    margin-left: 10px;
+    border: 0;
+}
+
+#name, #email,#number{
+    height: 27px;
+    width: 700px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 0;
+    
+}
+#dropdown{
+    height: 28px;
+    width: 710px;
+    margin-top: 5px;
+    border-radius: 10px;
+        border: 0;
+    
+}
+
+#name-label,#email-label,#number-label,#temp1,#temp2,#temp3{
+    color: white;
+        font-family: 'Gill Sans';
+        font-size: 22px;
+        /* font-weight: 400;
+            line-height: 1.4; */
+        color: white;
+}
+input[type="radio"]{
+    margin-left: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"]{
+    margin-left: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+
+textarea{
+    margin-top: 5px;
+    margin-left: 0px;
+    width:720px;
+    height:100px;
+    border-radius: 10px;
+        border: 0;
+}
+input[type="submit"]{
+    width: 730px;
+    margin-left: 20px;
+    margin-right: 50px;
+    height: 35px;
+    border-radius: 20px;
+        border: 0;
+    font-family: 'Gill Sans';
+        font-size: 25px;
+    background-color: rgb(40, 227, 37);
+}
+
+
