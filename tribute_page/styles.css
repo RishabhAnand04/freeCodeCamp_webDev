@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: normal;
     align-items: center;
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
 }
@@ -20,6 +20,7 @@ header {
 }
 
 #header_title {
+    
     width: 30%;
     text-align: left;
     font-weight: bolder;
@@ -31,6 +32,7 @@ header {
 
 nav {
     width: 75%;
+    
 }
 
 nav>ul {
@@ -43,8 +45,12 @@ nav>ul>li {
     padding: 8px;
 }
 
+body{
+    background-color: rgb(209, 232, 252);
+}
 #title {
-    margin-top: 80px;
+    background-color: rgb(209, 232, 252);
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -53,7 +59,7 @@ nav>ul>li {
 }
 
 #img-div {
-    background-color: rgb(164, 224, 224);
+    background-color: rgb(108, 151, 220);
     margin: auto;
     text-align: center;
     padding: 10px;
@@ -74,7 +80,7 @@ nav>ul>li {
 }
 
 #main {
-    background-color: aliceblue;
+    background-color:rgb(209, 232, 252);
 }
 
 #tribute-info {

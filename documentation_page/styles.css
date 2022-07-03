@@ -1,0 +1,46 @@
+html{
+    box-sizing:border-box;
+}
+.top{
+    width: 100%;
+    height: 3.5em;
+    display: flex;
+    background-color: aquamarine;
+    position: sticky;
+    align-items: center;
+    margin: 0;
+    justify-content: space-between;
+}
+.icon{
+    width: 2rem;
+    height: 1.8rem;
+    padding-left: 4px;
+    
+}
+.H{
+    vertical-align:top;
+    font-size: 1.4em;
+}
+.flag {
+    padding-right: 4px;
+    width: 1.5rem;
+    height: 1.3rem;
+}
+.L{
+    vertical-align: top;
+    font-size: larger;
+}
+nav{
+    position: sticky;
+    left:0;
+    width:28%;
+    border: solid red;
+    
+}
+table{
+    width: 100%;
+}
+table, th, td{
+    border: solid black;
+    border-collapse: collapse;
+}
