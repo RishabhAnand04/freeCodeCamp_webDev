@@ -1,0 +1,195 @@
+*, ::before, ::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    font-size: small;
+    color: rgb(8, 6, 6);
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    z-index: -1;
+    opacity: 1;
+}
+main{
+    margin-top:60px;
+    padding-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+}
+#header span{
+font-family: 'Samarkan', sans-serif;
+    color: #8e1711;
+    font-weight: bold;
+    font-size: x-large;
+}
+#header{
+    top:0;
+    left: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: url(https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header-img{
+    border-radius: 5px;
+    margin:5px;
+    width: 55px;
+    height: 50px;
+}
+#email{
+    border-radius: 6px;
+    border: 0;
+    text-align: left;
+    padding-left: 4px;
+    font-weight: lighter;
+    font-style: italic;
+}
+#submit{
+    background-color: #8e1711;
+    color: aliceblue;
+    border: 0;
+    padding: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+#video{
+    margin-top: 20px;
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+    border: 0;
+}
+#nav-bar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#nav-bar ul li{
+    list-style: none;
+    margin: 10px;
+}
+.intro{
+    margin: 10px 0;
+    text-align: center;
+}
+#email{
+    margin-top:20px;
+    width:260px;
+    font-weight: lighter;
+    padding: 2px;
+}
+#submit{
+    margin-top: 20px;
+    width: 120px;
+}
+#features{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: minmax(5rem, 1fr) minmax(min-content, 95rem) minmax(5rem, 1fr);
+    row-gap: 1.8rem;
+}
+.f_image{
+
+    align-self: center;
+    width: 50px;
+    height: 45px;
+    margin-right: 20px;
+}
+.content{
+    grid-column: 2 / 3;
+    text-align: left;
+    display: flex;
+}
+#working{
+    text-align: center;
+    margin-top: 60px;
+}
+@media only screen and (max-width: 1000px) {
+    #pricing {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+        }
+}
+@media screen and (min-width:1000px){
+    #pricing {
+            margin-top: 60px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            align-items: center;
+            justify-items: center;
+        }
+    
+}
+
+.product{
+    align-self: center;
+    display: grid;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 200px;
+    height: 220px;
+
+}
+.product div:nth-of-type(1){
+    padding-top:6px;
+    background-color: aquamarine;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border: 0;
+}
+.product input{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 0;
+}
+.product h3{
+    margin-top: 10px;
+}
+footer{
+    background-color: rgb(118, 118, 134);
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-content:flex-end;
+    align-items: center;
+    padding-right: 6px;
+}
+footer div{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+

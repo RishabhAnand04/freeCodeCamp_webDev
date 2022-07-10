@@ -1,12 +1,17 @@
 html{
     box-sizing:border-box;
+    margin: 0;
+    padding: 0;
 }
 .top{
+    position:absolute;
     width: 100%;
     height: 3.5em;
     display: flex;
+    top: 0;
+    left: 0;
+    padding: 0sss;
     background-color: aquamarine;
-    position: sticky;
     align-items: center;
     margin: 0;
     justify-content: space-between;
@@ -30,17 +35,105 @@ html{
     vertical-align: top;
     font-size: larger;
 }
-nav{
-    position: sticky;
-    left:0;
-    width:28%;
-    border: solid red;
-    
+@media only screen and (max-width: 700px){   
+#navbar{
+    /* position: relative;
+    top:2.9em;
+    height: 15em; */
+    text-align: center;
+    position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
 }
-table{
+table {
     width: 100%;
+    text-align: center;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
 }
-table, th, td{
-    border: solid black;
-    border-collapse: collapse;
+
+
+ table,
+ th,
+ td {
+     border-top: solid black;
+     border-collapse: collapse;
+     padding: 8px;
+ }
+ #main-doc{
+        position: relative;
+            margin-left: 0px;
+            margin-top: 270px;
+ }
+}
+@media (min-width:701px) {
+    #navbar {
+            top: 2.9em;
+            display: inline;
+            font-family: 'Rubik', sans-serif;
+            font-size: larger;
+            position: fixed;
+            height: 100%;
+            left: 0;
+            width: 40%;
+            border-right: solid black;
+        }
+    
+        /* a{
+        display: block;
+        position: relative;
+        top: -250px;
+        visibility: hidden;
+    } */
+        #content {
+            display: flex;
+        }
+    
+        .nav-head {
+            font-size: x-large;
+        }
+    
+        #main-doc>.main-section>header {
+            font-weight: 540;
+            font-size: larger;
+        }
+    
+        #main-doc>.main-section {
+            font-size: medium;
+        }
+    
+        #main-doc {
+            margin-top: 3.5em;
+            margin-left: 40%;
+    
+        }
+    
+        table {
+            width: 100%;
+        }
+    
+        .main-section {
+            padding: 1em;
+        }
+    
+        table,
+        th,
+        td {
+            border-top: solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
 }

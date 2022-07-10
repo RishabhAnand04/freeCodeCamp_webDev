@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="styles.css"/>
     <title>Documentation Page</title>
@@ -55,33 +58,224 @@
         </svg>
         </span>
     </div>
-    <nav class="navbar">
+    <div id="content">
+    <nav id="navbar">
         <table>
             <thead>
-                <th><header>C++.17 Documentation</header></th>
+                <th><header class="nav-head">C++.17 Documentation</header></th>
             </thead>
             <tbody>
-                <tr><td><div id="topic">Lexical conventions</div></td></tr>
-                <tr><td><div id="topic">Built-in types</div></td></tr>
-                <tr><td><div id="topic">Declarations and definitions</div></td></tr>
-                <tr><td><div id="topic">C++ built-in operators</div></td></tr>
-                <tr><td><div id="topic">Expressions</div></td></tr>
-                <tr><td><div id="topic">Statements</div></td></tr>
-                <tr><td><div id="topic">Functions</div></td></tr>
-                <tr><td><div id="topic">Operator overloading</div></td></tr>
-                <tr><td><div id="topic">Classes and Structs</div></td></tr>
-                <tr><td><div id="topic">Member Access Control</div></td></tr>
-                <tr><td><div id="topic">Constructors</div></td></tr>
-                <tr><td><div id="topic">Inheritance</div></td></tr>
-                <tr><td><div id="topic">Lambda expressions</div></td></tr>
-                <tr><td><div id="topic">References</div></td></tr>
-                <tr><td><div id="topic">Pointers</div></td></tr>
-                <tr><td><div id="topic">Exception handling</div></td></tr>
+                <tr><td><a class="nav-link" href="#Introduction">Introduction</a></td></tr>
+                <tr><td><a class="nav-link" href="#Lexical_convention">Lexical convention</a></td></tr>
+                <tr><td><a class="nav-link" href="#Built_in_types">Built in types</a></td></tr>
+                <tr><td><a class="nav-link" href="#Declarations">Declarations</a></td></tr>
+                <tr><td><a class="nav-link" href="#C++_built_in_operators">C++ built in operators</a></td></tr>
+                <tr><td><a class="nav-link" href="#Expressions">Expressions</a></td></tr>
+                <tr><td><a class="nav-link" href="#Statements">Statements</a></td></tr>
+                <tr><td><a class="nav-link" href="#Functions">Functions</a></td></tr>
+                <tr><td><a class="nav-link" href="#Operator_overloading">Operator overloading</a></td></tr>
+                <tr><td><a class="nav-link" href="#Classes">Classes</a></td></tr>
+                <tr><td><a class="nav-link" href="#Member_Access_Control">Member Access Control</a></td></tr>
         </tbody>
         </table>
     </nav>
-    <section class="documentation">
-
-    </section>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Since its creation, C++ has become one of the most widely used programming languages in the world. Well-written C++
+            programs are fast and efficient. The language is more flexible than other languages: It can work at the highest levels
+            of abstraction, and down at the level of the silicon. C++ supplies highly optimized standard libraries. It enables
+            access to low-level hardware features, to maximize speed and minimize memory requirements. C++ can create almost any
+            kind of program: Games, device drivers, HPC, cloud, desktop, embedded, and mobile apps, and much more. Even libraries
+            and compilers for other programming languages get written in C++.
+            </p>
+            <p>One of the original requirements for C++ was backward compatibility with the C language. As a result, C++ has always
+            permitted C-style programming, with raw pointers, arrays, null-terminated character strings, and other features. They
+            may enable great performance, but can also spawn bugs and complexity. The evolution of C++ has emphasized features that
+            greatly reduce the need to use C-style idioms. The old C-programming facilities are still there when you need them.
+            However, in modern C++ code you should need them less and less. Modern C++ code is simpler, safer, more elegant, and
+            still as fast as ever.
+            </p>
+        </section>
+        <section class="main-section" id="Lexical_convention">
+            <header>Lexical convention</header>
+            <p>This section introduces the fundamental elements of a C++ program. You use these elements, called "lexical elements" or
+            "tokens" to construct statements, definitions, declarations, and so on, which are used to construct complete programs.
+            The following lexical elements are discussed in this section:
+            </p>
+            <ul>
+                <li>Tokens and character sets</li>
+                <li>Comments</li>           
+                <li>Identifiers</li>
+                <li>Keywords</li>
+                <li>Punctuators</li>
+                <li>Numeric & boolean</li>
+                <li>pointer literals</li>
+                <li>String and character literals</li>
+                <li>User-defined literals</li>
+            </ul>
+        </section>
+        <section class="main-section" id="Built_in_types">
+            <header>Built in types</header>
+            <p>Built-in types (also called fundamental types) are specified by the C++ language standard and are built into the
+            compiler. Built-in types aren't defined in any header file. Built-in types are divided into three main categories:
+            integral, floating-point, and void. Integral types represent whole numbers. Floating-point types can specify values that
+            may have fractional parts. Most built-in types are treated as distinct types by the compiler. However, some types are
+            synonyms, or treated as equivalent types by the compiler.
+            </p>
+            
+                <ul>
+                <li>Void type</li>
+                The void type describes an empty set of values. No variable of type void can be specified. The void type is used
+                primarily to declare functions that return no values or to declare generic pointers to untyped or arbitrarily typed
+                data. Any expression can be explicitly converted or cast to type void. However, such expressions are restricted to the
+                following uses:
+                <ul>
+                <li> An expression statement.</li>
+                
+                <li>The left operand of the comma operator.</li>
+                
+                <li>The second or third operand of the conditional operator (? :).</li>
+                </ul>
+                <li> std::nullptr_t</li>
+                The keyword nullptr is a null-pointer constant of type std::nullptr_t, which is convertible to any raw pointer type. For
+                more information, see nullptr.
+                
+                <li>Boolean type</li>
+                The bool type can have values true and false. The size of the bool type is implementation-specific. See Sizes of
+                built-in types for Microsoft-specific implementation details.
+                
+                <li>Character types</li>
+                The char type is a character representation type that efficiently encodes members of the basic execution character set.
+                The C++ compiler treats variables of type char, signed char, and unsigned char as having different types.
+            </ul>
+        </section>
+        <section class="main-section" id="Declarations">
+            <header>Declarations</header>
+            <p>A C++ program consists of various entities such as variables, functions, types, and namespaces. Each of these entities
+            must be declared before they can be used. A declaration specifies a unique name for the entity, along with information
+            about its type and other characteristics. In C++ the point at which a name is declared is the point at which it becomes
+            visible to the compiler. You can't refer to a function or class that is declared at some later point in the compilation
+            unit. Variables should be declared as close as possible before the point at which they're used.
+            The following example shows some declarations:</p>
+            <code>
+                int f(int i)<br>
+                int main()<br>
+                {<br>
+                const double pi = 3.14; <br>
+                int i = f(2); <br>
+                C obj; <br>
+                std::string str; <br>
+                    j = 0; <br>
+                    auto k = 0; <br>
+                    }<br>
+            
+                    int f(int i)<br>
+                    {<br>
+                    return i + 42;<br>
+                    }<br>
+            </code>
+        </section>
+        <section class="main-section" id="C++_built_in_operators">
+            <header>C++ built in operators</header>
+            <p>The C++ language includes all C operators and adds several new operators. Operators specify an evaluation to be
+            performed on one or more operands.</p>
+            <ul>
+                <li>Precedence and associativity
+                Operator precedence specifies the order of operations in expressions that contain more than one operator. Operator
+                associativity specifies whether, in an expression that contains multiple operators with the same precedence, an operand
+                is grouped with the one on its left or the one on its right.</li>
+                <li>Alternative spellings
+                C++ specifies alternative spellings for some operators. In C, the alternative spellings are provided as macros in the
+                iso646.h header. In C++, these alternatives are keywords, and use of iso646.h or the C++ equivalent ciso646 is
+                deprecated. In Microsoft C++, the /permissive- or /Za compiler option is required to enable the alternative
+                spellings.
+                </li>
+            </ul>
+            <p></p>
+        </section>
+        <section class="main-section" id="Expressions">
+            <header>Expressions</header>
+            <p>This section describes C++ expressions. Expressions are sequences of operators and operands that are used for one or
+            more of these purposes:</p>
+            <ul>
+            <li> Computing a value from the operands.</li>
+            
+            <li> Designating objects or functions.</li>
+            
+            <li>Generating "side effects." (Side effects are any actions other than the evaluation of the expression — for example,
+            modifying the value of an object.)</li>
+            </ul>
+            
+            <p>In C++, operators can be overloaded and their meanings can be user-defined. However, their precedence and the number of
+            operands they take cannot be modified. This section describes the syntax and semantics of operators as they are supplied
+            with the language, not overloaded.</p>
+        </section>
+        <section class="main-section" id="Statements">
+            <header>Statements</header>
+            <p>C++ statements are executed sequentially, except when an expression statement, a selection statement, an iteration
+            statement, or a jump statement specifically modifies that sequence.
+            
+            Statements may be of the following types:
+        </p>
+            <ul>
+                <li><code>labeled-statement</code></li>
+                <li><code>expression-statement</code></li>
+                <li><code>compound-statement</code></li>
+                <li><code>selection-statement</code></li>
+                <li><code>iteration-statement</code></li>
+                <li><code>jump-statement</code></li>
+                <li><code>declaration-statement</code></li>
+                <li><code>try-throw-catch</code></li>
+            </ul>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>Functions</header>
+            <p>A function is a block of code that performs some operation. A function can optionally define input parameters that
+            enable callers to pass arguments into the function. A function can optionally return a value as output. Functions are
+            useful for encapsulating common operations in a single reusable block, ideally with a name that clearly describes what
+            the function does. The following function accepts two integers from a caller and returns their sum; a and b are
+            parameters of type int.</p>
+            <code>int sum(int a, int b)<br>
+            {<br>
+            return a + b;<br>
+            }</code>
+        </section>
+        <section class="main-section" id="Operator_overloading">
+            <header>Operator overloading</header>
+            <p>The operator keyword declares a function specifying what operator-symbol means when applied to instances of a class.
+            This gives the operator more than one meaning, or "overloads" it. The compiler distinguishes between the different
+            meanings of an operator by examining the types of its operands.</p>
+            <p>Syntax<br>
+            <code> type operator operator-symbol ( parameter-list )</code>
+            </p>
+            <p>Remarks<br>
+            You can redefine the function of most built-in operators globally or on a class-by-class basis. Overloaded operators are
+            implemented as functions.
+            
+            The name of an overloaded operator is operator x, where x is the operator as it appears in the following table. For
+            example, to overload the addition operator, you define a function called operator+. Similarly, to overload the
+            addition/assignment operator, +=, define a function called operator+=.</p>
+        </section>
+        <section class="main-section" id="Classes">
+            <header>Classes</header>
+            <p>This section introduces C++ classes and structs. The two constructs are identical in C++ except that in structs the
+            default accessibility is public, whereas in classes the default is private.
+            
+            Classes and structs are the constructs whereby you define your own types. Classes and structs can both contain data
+            members and member functions, which enable you to describe the type's state and behavior.</p>
+            <p></p>
+        </section>
+        <section class="main-section" id="Member_Access_Control">
+            <header>Member Access Control</header>
+            <p>Access controls enable you to separate the public interface of a class from the private implementation details and the
+            protected members that are only for use by derived classes. The access specifier applies to all members declared after
+            it until the next access specifier is encountered.</p>
+            <p>The default access is private in a class, and public in a struct or union. Access specifiers in a class can be used any
+            number of times in any order. The allocation of storage for objects of class types is implementation-dependent. However,
+            compilers must guarantee assignment of members to successively higher memory addresses between access specifiers.</p>
+        </section> 
+    </main>
+    </div>
 </body>
 </html>
