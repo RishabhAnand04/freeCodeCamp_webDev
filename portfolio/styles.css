@@ -138,6 +138,7 @@ img{
      color: inherit;
     display: block;
 }
+
 @media(max-width:800px) {
     .icon {
             display: grid;
